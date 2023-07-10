@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: client-service
+  cloud:
+    config:
+      enabled: true
+      uri: https://localhost:8084
+  datasource:
+    url: jdbc:postgresql://localhost:5432/BD_Facturation
+    username: postgres
+    password:
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
