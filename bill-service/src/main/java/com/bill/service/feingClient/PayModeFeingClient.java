@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "pay-mode-service", url = "http://localhost:8081")
+@FeignClient(name = "pay-mode-service")
 @RequestMapping("/api/v1")
 public interface PayModeFeingClient {
 
